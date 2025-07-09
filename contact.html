@@ -9,17 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/wb-lg.png">
 
     <title> RC | CONTACT </title>
 
-</head>
-<body>
+</head> 
+<body class="font-[Cinzel]">
 
     
         <header>
-            <nav class="flex justify-between items-center px-[4rem] bg-black h-20 fixed inset-0 z-10">
+            <nav class="flex items-center justify-between px-12 py-8 xs:flex-col xs:py-3 bg-black h-20 fixed top-0 right-0 left-0 z-10">
                 <h1 class="text-white text-3xl cursor-pointer">
                     <a href="personal.html">RC</a>
                 </h1>
@@ -35,7 +34,7 @@
 
         <main>
 
-            <section class="w-full h-screen flex-col flex items-center justify-center pl-[4rem]
+            <section class="w-full h-screen flex-col flex items-center justify-center
                             bg-center bg-cover bg-no-repeat" 
                             style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/bg_1.webp');">
 
@@ -67,13 +66,17 @@
 
             </section>
 
-             <div class="text-white absolute bottom-0 inset-x-1/2">
-                   <small>
-                        <i class="fa-brands fa-github inline-block"><a href="https://github.com/Techzel" target="_blank">_Github</a></i>
-                   </small>
-              </div>
+                    <footer class="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white w-full text-center">
+                              <small>
+                                     <a href="https://github.com/Techzel" target="_blank" aria-label="Github Profile" rel="noopener noreferrer" class="inline-flex items-center gap-1">
+                                                    <i class="fa-brands fa-github"></i> _Github
+                                     </a>
+                               </small>
+                    </footer>
 
         </main>
+
+        <script src="js/size.js"></script>
     
 </body>
 </html>

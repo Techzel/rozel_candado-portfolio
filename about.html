@@ -7,16 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-      <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="img/wb-lg.png">
 
     <title>RC | ABOUT</title>
 </head>
-<body>
+<body class="font-[Cinzel]">
 
     <header>
-            <nav class="flex justify-between items-center px-[4rem] bg-black h-20 fixed inset-0 z-10">
+            <nav class="flex items-center justify-between px-12 py-8 xs:flex-col xs:py-3 bg-black h-20 z-10">
                 <h1 class="text-white text-3xl cursor-pointer">
                     <a href="personal.html">RC</a>
                 </h1>
@@ -31,56 +30,63 @@
 
         <main class="relative">
 
-            <section class="w-full h-screen flex-col flex items-center justify-center
-                            bg-center bg-cover bg-no-repeat" 
+            <section class="w-full min-h-[88.5vh] flex flex-col items-center justify-center
+                            bg-center bg-cover bg-no-repeat xs:gap-5 gap-10" 
                             style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/bg_1.webp');">
-                  <div class="mt-[3rem]">
-                        <h1 class="text-white text-4xl font-bold ">Biography</h1>
+                  <div>
+                        <h1 class="xs:text-2xl text-white text-4xl font-bold ">Biography</h1>
                   </div>
 
-                  <div class="flex items-center justify-center gap-28 mt-[2rem]">
-                        <img class="h-[25rem] w-2/4 object-cover shadow-[0px_0px__20px_red] opacity-50" src="img/sigma_1.png">
+                            <div class="w-full flex justify-center items-center">
+                                <div class="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-28 w-full max-w-5xl">
+                                    <img class="h-40 sm:h-48 md:h-52 lg:h-[25rem] w-full max-w-xs object-contain shadow-[0px_0px_20px_red] opacity-50" src="img/sigma_1.png">
 
-                        <div class="flex flex-col gap-8">
-                            <p class="text-white w-[40rem]">
-                                Hi! I'm a passionate beginner web developer with a strong foundation 
-                                in building clean and responsive websites using <span class="hover:text-red-500 font-bold cursor-pointer">
-                                <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
-                                </span>, <span class="hover:text-violet-500 font-bold cursor-pointer">
-                                <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a>
-                                </span>, and <span class="hover:text-green-500 font-bold cursor-pointer">
-                                <a href="https://tailwindcss.com/docs/installation" target="_blank">TAILWIND</a>
-                                </span>. I enjoy turning ideas into functional and visually appealing web pages. 
-                                While I'm still learning and growing in this field, I focus on writing 
-                                organized code and designing user-friendly interfaces. I'm excited to 
-                                keep improving my skills and take on more web development challenges as I 
-                                grow in this journey. 
-                            </p>    
+                                    <div class="flex flex-col xs-gap-0 gap-4 xs:text-[0.5rem] sm:text-[0.6rem] md:text-[0.7rem] text-center lg:text-left px-6 sm:px-8">
+                                        <p class="text-white">
+                                            Hi! I'm a passionate beginner web developer with a strong foundation
+                                            in building clean and responsive websites using 
+                                            <span class="hover:text-red-500 font-bold cursor-pointer">
+                                                <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
+                                            </span>, 
+                                            <span class="hover:text-violet-500 font-bold cursor-pointer">
+                                                <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a>
+                                            </span>, and 
+                                            <span class="hover:text-green-500 font-bold cursor-pointer">
+                                                <a href="https://tailwindcss.com/docs/installation" target="_blank">TAILWIND</a>
+                                            </span>. I enjoy turning ideas into functional and visually appealing web pages. 
+                                            While I'm still learning and growing in this field, I focus on writing 
+                                            organized code and designing user-friendly interfaces. I'm excited to 
+                                            keep improving my skills and take on more web development challenges as I 
+                                            grow in this journey. 
+                                        </p>    
 
-                            <p class="text-white w-[40rem]">
-                                As I continue to explore the world of web development, 
-                                I'm currently working on small projects that help me
-                                apply what I've learned and strengthen my problem-solving abilities. 
-                                My goal is to build websites that not only look  
-                                great but also offer a smooth user experience. I'm eager to collaborate, 
-                                learn from others, and eventually expand my skills to include JavaScript  
-                                and other modern web technologies
-                            </p>
+                                        <p class="text-white">
+                                            As I continue to explore the world of web development, 
+                                            I'm currently working on small projects that help me
+                                            apply what I've learned and strengthen my problem-solving abilities. 
+                                            My goal is to build websites that not only look  
+                                            great but also offer a smooth user experience. I'm eager to collaborate, 
+                                            learn from others, and eventually expand my skills to include JavaScript  
+                                            and other modern web technologies
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-                        </div>
-                       
-                  </div>
-
-                   <div class="text-white absolute bottom-0 inset-x-1/2">
-                        <small>
-                                <i class="fa-brands fa-github inline-block"><a href="https://github.com/Techzel" target="_blank">_Github</a></i>
-                        </small>
-                  </div>
-
+                                 <footer class="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white w-full text-center">
+                                     <small>
+                                            <a href="https://github.com/Techzel" target="_blank" aria-label="Github Profile" rel="noopener noreferrer" class="inline-flex items-center gap-1">
+                                                    <i class="fa-brands fa-github"></i> _Github
+                                             </a>
+                                     </small>
+                                 </footer>
 
             </section>
 
         </main>
+
+
+        <script src="js/size.js"></script>
     
 </body>
 </html>

@@ -8,22 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script> 
     <link rel="icon" href="img/wb-lg.png">
 
     <title> RC | PORTFOLIO </title>
 
 </head>
-<body> 
+<body class="font-[Cinzel]"> 
 
         <header>
-            <nav class="flex justify-between items-center px-[4rem] bg-black h-20 fixed inset-0 z-10">
+            <nav class="flex items-center justify-between px-12 py-8 xs:flex-col xs:py-3 bg-black h-20 fixed top-0 right-0 left-0 z-10">
                 <h1 class="text-white text-3xl cursor-pointer">
                     <a href="personal.html">RC</a>
                 </h1>
 
-                <ul class="flex gap-8 text-white cursor-pointer">
+                <ul class="flex gap-8 flex-row text-white cursor-pointer">
                     <li class="list-none hover:text-gray-400"><a href="works.html">Works</a></li> 
                     <li class="list-none hover:text-gray-400"><a href="about.html">About</a></li>
                     <li class="list-none hover:text-gray-400"><a href="contact.html">Contact</a></li>
@@ -32,25 +31,27 @@
         </header>
 
         <main class="relative">
-             <section class="w-full h-full flex justify-center items-center relative h-screen bg-center bg-cover bg-no-repeat" 
+             <section class="flex justify-center items-center relative w-full h-screen bg-center bg-cover bg-no-repeat" 
                             style="background-image: linear-gradient(#0000004d, #0000004d), url('img/bg_1.webp');">
                      
             <div class="flex flex-col items-center mt-[5rem]">
-                <small class="text-white font-semibold">"Web Developer"</small> 
-                <h1 class="text-white text-[5rem]">Rozel Candado</h1>
+                <small class="xs:text-base lg:7xl text-white font-semibold">"Web Developer"</small> 
+                <h1 class="text-white text-6xl p-8 xs:text-3xl  ">Rozel Candado</h1>
             </div>
+
+                <footer class="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white">
+                    <small>
+                        <a href="https://github.com/Techzel" target="_blank" aria-label="Github Profile" rel="noopener noreferrer" class="flex items-center">
+                            <i class="fa-brands fa-github"></i> _Github
+                        </a>
+                    </small>
+                </footer>
+
 
              </section>
 
-
-              <div class="text-white absolute bottom-0 inset-x-1/2">
-                   <small>
-                        <i class="fa-brands fa-github inline-block"><a href="https://github.com/Techzel" target="_blank">_Github</a></i>
-                   </small>
-              </div>
-
         </main>
 
-
+        <script src="js/size.js"></script>
 </body>
 </html>
